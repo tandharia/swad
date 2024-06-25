@@ -1,0 +1,557 @@
+* {
+  scroll-behavior: smooth;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  line-height: 2;
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: white;
+}
+
+.navbar {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  color: white;
+  background-color: transparent;
+  z-index: 100;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.nav, ul, .title {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex: 1;
+}
+
+.title {
+  align-items: center;
+  font-size: 25px;
+  margin-left: 30px;
+  transition: font-size 1s;
+  font-family: 'Cormorant Upright', serif;
+}
+
+ul {
+  margin-left: auto;
+  margin-right: 30px;
+}
+
+li {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  text-align: center;
+  font-size: 21px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.landingPage {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(thali.png);
+  background-position: top;
+  background-size: cover;
+  width: 100%;
+}
+
+.titles {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(-10%, -50%);
+}
+
+#bigTitle {
+  font-size: 50px;
+}
+
+#littleTitle {
+  font-size: 25px;
+}
+
+.itemName {
+  font-family: 'Julius Sans One', sans-serif;
+}
+
+.main-content {
+  width: 100%;
+  margin: 0;
+  padding: 100px 0 0px;
+}
+
+.introTitle {
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 25px;
+}
+
+.paragraph {
+  margin-bottom: 100px;
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+.intro {
+  font-size: 21px;
+  padding-left: 21px;
+  padding-right: 21px;
+  text-align: center;
+}
+
+.openHrs {
+  margin: auto;
+  margin-bottom: 15px;
+  width: 50%;
+  text-align: center;
+}
+
+.hrs {
+  display: flex;
+  width: 42%;
+  margin: auto;
+}
+
+.hrs1, .hrs2, .hrs3 {
+  flex: 1;
+  line-height: 2;
+  padding: 0 15px 0;
+}
+
+.hrs1 {
+  text-align: right;
+}
+
+.footer {
+  background-color: black;
+  color: #9b9b9b;
+  width: 100%;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+}
+
+.footerTitle {
+  color: white;
+  font-family: 'Julius Sans One', sans-serif;
+}
+
+.footerThings {
+  display: flex;
+  margin: auto;
+  padding: 50px 0 50px;
+  width: 100%;
+}
+
+.when, .empty, .address, .contacts {
+  flex: 1;
+}
+
+.secTitle {
+  flex: 1;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.titleAgain {
+  position: absolute;
+  font-family: 'Cormorant Upright', serif;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -0%);
+  font-size: 25px;
+  color: white;
+}
+
+.tabs {
+  font-size: 15px;
+  display: flex;
+  margin: auto;
+  margin-bottom: 75px;
+  width: 75%;
+  font-family: 'Julius Sans One', sans-serif;
+  border-top: 1px black solid;
+  border-bottom: 1px black solid;
+}
+
+.tabs span {
+  padding: 10px;
+  border: 1px solid rgb(255, 255, 255);
+  flex: 1;
+  text-align: center;
+}
+
+.tabs span:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.menu {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 25px;
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white; 
+  z-index: 1;
+}
+
+.full-width-image {
+  width: 100%;
+  margin-bottom: 100px;
+  height: 60vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.full-width-image::before {
+  content: "";
+  display: block;
+  padding-top: 56.25%; 
+}
+
+.full-width-image::after {
+  content: "";
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(chai.png);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+.stuff {
+  display: flex;
+  transition: display 5s;
+  width: 100%;
+}
+
+.stuff h3 {
+  font-family: 'Allura', cursive;
+  font-size: 31px;
+}
+
+.firstHalf, .secondHalf {
+  display: inline-block;
+  width: 100%;
+}
+
+.emptyFirstHalf {
+  text-align: right;
+  flex: 1;
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 3%;
+}
+
+.emptySecondHalf {
+  text-align: left;
+  flex: 1;
+  width: 100%;
+  padding-left: 3%;
+  padding-right: 10%;
+}
+
+[data-tab-info] {
+  display: none;
+}
+
+.active[data-tab-info] {
+  display: block;
+}
+
+#fb {
+  font-size: 21px;
+}
+
+.location {
+  height: 450px;
+}
+
+
+
+
+
+/* ^ Desktops (min-width: 1281px) ^ */
+
+/* Laptops, Desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .title {
+    font-size: 21px;
+  }
+
+  #bigTitle {
+    font-size: 41px;
+  }
+
+  #littleTitle {
+    font-size: 21px;
+  }
+
+  .nav li {
+    font-size: 15px;
+  }
+
+  .introTitle {
+    font-size: 21px;
+  }
+
+  .intro {
+    font-size: 21px;
+  }
+
+  .menu {
+    font-size: 21px;
+  }
+
+  .tabs {
+    font-size: 15px;
+  }
+
+  .stuff {
+    font-size: 15px;
+  }
+
+  .footer {
+    font-size: 12px;
+  }
+
+  .titleAgain {
+    font-size: 21px;
+  }
+
+  #fb {
+    font-size: 15px;
+  }
+}
+
+/* Tablets, Ipads (portrait) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .title {
+    font-size: 16px;
+  }
+
+  #bigTitle {
+    font-size: 31px;
+  }
+
+  #littleTitle {
+    font-size: 16px;
+  }
+
+  .nav li {
+    font-size: 12px;
+  }
+
+  .introTitle {
+    font-size: 16px;
+  }
+
+  .intro {
+    font-size: 12px;
+  }
+
+  .menu {
+    font-size: 16px;
+  }
+
+  .tabs {
+    font-size: 12px;
+  }
+
+  .stuff {
+    font-size: 12px;
+  }
+
+  .footer {
+    font-size: 10px;
+  }
+
+  .titleAgain {
+    font-size: 16px;
+  }
+
+  #fb {
+    font-size: 12px;
+  }
+}
+
+/* Tablets, Ipads (landscape) */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .title {
+    font-size: 16px;
+  }
+
+  #bigTitle {
+    font-size: 31px;
+  }
+
+  #littleTitle {
+    font-size: 16px;
+  }
+
+  .nav li {
+    font-size: 12px;
+  }
+
+  .introTitle {
+    font-size: 16px;
+  }
+
+  .intro {
+    font-size: 12px;
+  }
+
+  .menu {
+    font-size: 16px;
+  }
+
+  .tabs {
+    font-size: 12px;
+  }  
+
+  .stuff {
+    font-size: 12px;
+  }
+
+  .footer {
+    font-size: 10px;
+  }
+
+  .titleAgain {
+    font-size: 16px;
+  }
+
+  #fb {
+    font-size: 12px;
+  }
+}
+
+/* Low Resolution Tablets, Mobiles (Landscape) */
+@media (min-width: 481px) and (max-width: 767px) {
+  .title {
+    font-size: 12px;
+  }
+
+  #bigTitle {
+    font-size: 21px;
+  }
+
+  #littleTitle {
+    font-size: 12px;
+  }
+
+  .nav li {
+    font-size: 12px;
+  }
+
+  .introTitle {
+    font-size: 12px;
+  }
+
+  .intro {
+    font-size: 12px;
+  }
+
+  .menu {
+    font-size: 12px;
+  }
+
+  .tabs {
+    font-size: 12px;
+  }
+
+  .stuff {
+    font-size: 12px;
+  }
+
+  .footer {
+    font-size: 8px;
+  }
+
+  .titleAgain {
+    font-size: 12px;
+  }
+
+  #fb {
+    font-size: 12px;
+  }
+}
+
+/* Most of the Smartphones Mobiles (Portrait) */
+@media (max-width: 480px) {
+  .title, .introTitle, .intro, .menu, #fb {
+    font-size: 15px;
+    font-weight: 200;
+  }
+
+  .tabs, .stuff {
+    font-size: 13px;
+  }
+
+  .nav li {
+    display: none;
+  }
+
+  #bigTitle {
+    font-size: 27px;
+    font-weight: 300;
+  }
+
+  #littleTitle {
+    font-size: 17px;
+    font-weight: 200;
+  }
+
+  .full-width-image {
+    height: 25vh;
+  }
+
+  .location {
+    height: 250px;
+  }
+
+  .empty {
+    display: none;
+  }
+
+  .titleAgain {
+    font-size: 11px;
+    top: -25%;
+    left: 30%;
+    transform: translate(-30%, 25%);
+    display: none;
+  }
+
+  .footer {
+    font-size: 6px;
+    font-weight: 300;
+  }
+
+  .footerThings {
+    /* margin: auto; */
+    padding: 35px 0px 35px;
+    width: 100vw;
+    /* text-align: right; */
+  }
+}
